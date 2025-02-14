@@ -1,0 +1,14 @@
+.header {
+  position: absolute;
+  z-index: 2;
+  padding: 0px 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.user-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

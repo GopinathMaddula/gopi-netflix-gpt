@@ -1,0 +1,92 @@
+/* .login-container {
+  position: absolute;
+  z-index: 1;
+} */
+.login-container {
+  position: absolute; /* Establishes a positioning context */
+  overflow: hidden; /* Optional: hides overflow from the pseudo-element */
+}
+
+.login-container img {
+  display: block; /* Remove extra space below the image */
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+}
+
+/* Pseudo-element for the gradient overlay */
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Adjust the gradient colors and direction as desired */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+  pointer-events: none; /* Allows clicks to pass through to the image if needed */
+  z-index: 1; /* Ensures the overlay is above the image */
+}
+.form-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+.form-container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 34px;
+  border-radius: 8px;
+}
+.sign-in-heading {
+  font-size: 32px;
+  margin-bottom: 28px;
+  font-weight: bold;
+}
+.border {
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  background-color: rgb(27, 26, 26);
+}
+.button {
+  width: 100%;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+}
+.new-netflix {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 24px;
+}
+.new-netflix span {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.new-netflix span:hover {
+  color: rgb(106, 109, 108);
+}
+.error-message {
+  color: red;
+  margin-bottom: 16px;
+}
