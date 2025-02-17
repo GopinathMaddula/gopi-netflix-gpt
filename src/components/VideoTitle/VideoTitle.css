@@ -1,0 +1,31 @@
+.video-title-container {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.title-container {
+  width: 50%;
+  padding: 34px;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+}
+.play-button {
+  width: inherit;
+  margin-right: 10px;
+  background-color: rgb(214, 214, 214);
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.play-button:hover {
+  background-color: rgb(255, 248, 248);
+}

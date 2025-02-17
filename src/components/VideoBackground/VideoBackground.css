@@ -1,0 +1,7 @@
+.bg-container {
+  position: absolute;
+}
+.bg-video {
+  width: 100vw;
+  aspect-ratio: 16/9;
+}
