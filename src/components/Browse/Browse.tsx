@@ -4,6 +4,7 @@ import { MOVIE_LIST_URL, options } from "../../utils/videoConstants";
 import MainContainer from "../MainContainer/MainContainer";
 import { useDispatch } from "react-redux";
 import { addNowPlayingMovies } from "../../store/moviesSlice.ts";
+import SecondaryContainer from "../SecondaryContainer/SecondaryContainer.tsx";
 
 const Browse = () => {
   const dispatch = useDispatch();
@@ -13,8 +14,6 @@ const Browse = () => {
     if (movies) {
       dispatch(addNowPlayingMovies(movies?.results));
     }
-
-    console.log(movies);
   };
   useEffect(() => {
     fetchMoviesList();
@@ -22,6 +21,7 @@ const Browse = () => {
   return (
     <div className="main-container">
       <MainContainer />
+      <SecondaryContainer />
     </div>
   );
 };

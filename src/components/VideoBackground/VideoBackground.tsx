@@ -18,7 +18,6 @@ const VideoBackground = ({ id }: Props) => {
       (movie: any) => movie?.type === "Trailer"
     );
     setTrailerKey(movieTrailer[0]?.key);
-    console.log(movieTrailer);
   };
   useEffect(() => {
     getVideoBg();
